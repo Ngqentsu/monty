@@ -14,6 +14,19 @@ int execute(char *items, stack_t **stack, unsigned int line_number, FILE *file)
 				{"pall", pall},
 				{"pint", pint},
 				{"pop", pop},
+				{"swap", swap},
+				{"add", add},
+				{"nop", nop},
+				{"sub", sub},
+				{"div", div_op},
+				{"mul", mul_op},
+				{"mod", mod_op},
+				{"pchar", pchar},
+				{"pstr", pstr},
+				{"rotl", rotl},
+				{"rotr", rotr},
+				{"stack", f_stack},
+				{"queue", f_queue},
 				{NULL, NULL}
 				};
 	unsigned int i = 0;

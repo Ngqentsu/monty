@@ -20,9 +20,14 @@ exit(EXIT_FAILURE);
 (*new_node).next = *stack;
 (*new_node).prev = NULL;
 
-if (stack)
+if (*stack == NULL)
 {
-(*stack)->prev = new_node;
+new_node->prev = NULL;
+}
+else
+{
+(*stack)->next = new_node;
+new_node->prev = *stack;
 }
 
 *stack = new_node;
